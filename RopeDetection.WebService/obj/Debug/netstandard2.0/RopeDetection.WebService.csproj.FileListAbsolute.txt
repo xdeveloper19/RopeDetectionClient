@@ -1,8 +1,0 @@
-C:\Games\repos\RopeDetectionWeb\RopeDetectionWeb\RopeDetection.WebService\bin\Debug\netstandard2.0\RopeDetection.WebService.deps.json
-C:\Games\repos\RopeDetectionWeb\RopeDetectionWeb\RopeDetection.WebService\bin\Debug\netstandard2.0\RopeDetection.WebService.dll
-C:\Games\repos\RopeDetectionWeb\RopeDetectionWeb\RopeDetection.WebService\bin\Debug\netstandard2.0\RopeDetection.WebService.pdb
-C:\Games\repos\RopeDetectionWeb\RopeDetectionWeb\RopeDetection.WebService\obj\Debug\netstandard2.0\RopeDetection.WebService.csprojAssemblyReference.cache
-C:\Games\repos\RopeDetectionWeb\RopeDetectionWeb\RopeDetection.WebService\obj\Debug\netstandard2.0\RopeDetection.WebService.AssemblyInfoInputs.cache
-C:\Games\repos\RopeDetectionWeb\RopeDetectionWeb\RopeDetection.WebService\obj\Debug\netstandard2.0\RopeDetection.WebService.AssemblyInfo.cs
-C:\Games\repos\RopeDetectionWeb\RopeDetectionWeb\RopeDetection.WebService\obj\Debug\netstandard2.0\RopeDetection.WebService.dll
-C:\Games\repos\RopeDetectionWeb\RopeDetectionWeb\RopeDetection.WebService\obj\Debug\netstandard2.0\RopeDetection.WebService.pdb
