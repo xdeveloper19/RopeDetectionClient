@@ -1,0 +1,24 @@
+﻿<Application x:Class="RopeDetection.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:RopeDetection.WPF"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#FFA1B5FA"/>
+            <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="#f1f8e9"/>
+            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#FFA1B5FA"/>
+            <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush" Color="#f1f8e9"/>
+            <!--<SolidColorBrush x:Key="TextBoxColor" Color="#767575"/>-->
+            <!--<SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="#7c4dff"/>
+            <SolidColorBrush x:Key="PrimaryHueDarkForegroundBrush" Color="#c51162"/>
+            <SolidColorBrush x:Key="SecondaryAccentBrush" Color="#00e676"/>
+            <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="#f4ff81"/>-->
+            <!--#f1f8e9-->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

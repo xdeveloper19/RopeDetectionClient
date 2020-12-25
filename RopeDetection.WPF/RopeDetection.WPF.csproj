@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestImages\i7001144.jpg" />
+    <None Remove="TestImages\i70012.jpg" />
+    <None Remove="TestImages\i700121.jpg" />
+    <None Remove="TestImages\i7001247.jpg" />
+    <None Remove="TestImages\i70013.jpg" />
+    <None Remove="TestImages\i700228.jpg" />
+    <None Remove="TestImages\StartImage.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="1.2.7" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="PropertyChanged.Fody" Version="3.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RopeDetection.CommonData\RopeDetection.CommonData.csproj" />
+    <ProjectReference Include="..\RopeDetection.WebService\RopeDetection.WebService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="HomeRegistrationLogin\home.png" />
+    <Resource Include="TestImages\i7001144.jpg" />
+    <Resource Include="TestImages\i70012.jpg" />
+    <Resource Include="TestImages\i700121.jpg" />
+    <Resource Include="TestImages\i7001247.jpg" />
+    <Resource Include="TestImages\i70013.jpg" />
+    <Resource Include="TestImages\i700228.jpg" />
+    <Resource Include="TestImages\StartImage.jpg" />
+  </ItemGroup>
+
+</Project>

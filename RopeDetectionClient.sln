@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RopeDetection.WPF", "RopeDetection.WPF\RopeDetection.WPF.csproj", "{05356529-F08C-43D9-AA94-CB5B1EA3062C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RopeDetection.WebService", "RopeDetection.WebService\RopeDetection.WebService.csproj", "{BD8ADA6D-1CDF-46E5-BBFC-42531CBA2C8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RopeDetection.CommonData", "RopeDetection.CommonData\RopeDetection.CommonData.csproj", "{0F27B850-C55E-4398-BD91-706C7B8F4B89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05356529-F08C-43D9-AA94-CB5B1EA3062C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05356529-F08C-43D9-AA94-CB5B1EA3062C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05356529-F08C-43D9-AA94-CB5B1EA3062C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05356529-F08C-43D9-AA94-CB5B1EA3062C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD8ADA6D-1CDF-46E5-BBFC-42531CBA2C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD8ADA6D-1CDF-46E5-BBFC-42531CBA2C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD8ADA6D-1CDF-46E5-BBFC-42531CBA2C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD8ADA6D-1CDF-46E5-BBFC-42531CBA2C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F27B850-C55E-4398-BD91-706C7B8F4B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F27B850-C55E-4398-BD91-706C7B8F4B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F27B850-C55E-4398-BD91-706C7B8F4B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F27B850-C55E-4398-BD91-706C7B8F4B89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61A2EBFB-D6A3-4E08-9322-023C7D1AEFD3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CreationTeachingModel\AddDatePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CreationTeachingModel\ModelCreationSteps.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CreationTeachingModel\ScenarioSelectionPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CreationTeachingModel\ShowTeachingResultPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CreationTeachingModel\StartTeachingPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HomeRegistrationLogin\AuthenticationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HomeRegistrationLogin\RegistrationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ImageAnalysis\ImageAnalysisPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CreationTeachingModel\AddDatePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreationTeachingModel\ListOfModels.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreationTeachingModel\ModelCreationSteps.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreationTeachingModel\ScenarioSelectionPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreationTeachingModel\ShowTeachingResultPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreationTeachingModel\StartTeachingPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HomeRegistrationLogin\AuthenticationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HomeRegistrationLogin\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HomeRegistrationLogin\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListItems.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ImageAnalysis\ImageAnalysisPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ModelCreation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OperatingModePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
