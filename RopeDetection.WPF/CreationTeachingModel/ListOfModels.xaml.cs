@@ -70,13 +70,15 @@ namespace RopeDetection.WPF.CreatingTrainingModel
                 MessageBox.Show("Необходимо выбрать модель !");
             else
             {
-                if(IsShowTrainedModels)
+                var SelectedModel = ListModels.SelectedItem as ModelResponse;
+                if (IsShowTrainedModels)
                 {
+                    StaticModel.ModelId = SelectedModel.Id;
+                    StaticModel.NameModel = SelectedModel.Name;
                     this.NavigationService.Navigate(new ImageAnalysisPage());
                 }
                 else
                 {
-                    var SelectedModel = ListModels.SelectedItem as ModelResponse;
                     StaticModel.ModelId = SelectedModel.Id;
                     StaticModel.NameModel = SelectedModel.Name;
                     AddDatePage operatingModePage = new AddDatePage();

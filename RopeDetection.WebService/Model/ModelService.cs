@@ -14,6 +14,7 @@ namespace RopeDetection.WebService.Model
     public class ModelService
     {
         private static HttpClient _httpClient;
+
         /// <summary>
         /// Инициализация экземпляра клиента
         /// </summary>
