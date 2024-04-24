@@ -21,7 +21,8 @@ namespace RopeDetection.CommonData
         public enum ModelType
         {
             Classification,
-            Regression
+            Regression,
+            ObjectDetection
         }
 
         public enum TrainStatus

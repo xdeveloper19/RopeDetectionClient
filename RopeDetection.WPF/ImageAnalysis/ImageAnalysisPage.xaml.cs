@@ -4,20 +4,11 @@ using RopeDetection.WebService.Model;
 using RopeDetection.WebService;
 using RopeDetection.WPF.StaticClass;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace RopeDetection.WPF.ImageAnalysis
 {
@@ -54,6 +45,21 @@ namespace RopeDetection.WPF.ImageAnalysis
             if (mLImageAnalysis.ImageName == "d1.jpg")
             {
                 MessageBox.Show($"Результат: обрывы наружных проволок, точность: 89.83743 %");
+                return;
+            }
+
+            if (StaticModel.ModelType == ModelEnums.ModelType.ObjectDetection)
+            {
+                var path = "C:\\Users\\Daria\\source\\repos\\RopeDetectionNetwork\\scripts\\predict_model.m";
+                var pi = new ProcessStartInfo(path)
+                {
+                    Arguments = System.IO.Path.GetFileName(path),
+                    UseShellExecute = true,
+                    WorkingDirectory = System.IO.Path.GetDirectoryName(path),
+                    FileName = "C:\\Program Files\\MATLAB\\R2018b\\bin\\matlab.exe",
+                    Verb = "OPEN"
+                };
+                Process.Start(pi);
                 return;
             }
 

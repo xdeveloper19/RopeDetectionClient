@@ -2,18 +2,9 @@
 using RopeDetection.WPF.CreationTeachingModel;
 using RopeDetection.WPF.ImageAnalysis;
 using RopeDetection.WPF.StaticClass;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace RopeDetection.WPF.CreatingTrainingModel
 {
@@ -75,6 +66,7 @@ namespace RopeDetection.WPF.CreatingTrainingModel
                 {
                     StaticModel.ModelId = SelectedModel.Id;
                     StaticModel.NameModel = SelectedModel.Name;
+                    StaticModel.ModelType = SelectedModel.Type;
                     this.NavigationService.Navigate(new ImageAnalysisPage());
                 }
                 else

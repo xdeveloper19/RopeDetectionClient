@@ -8,7 +8,7 @@ namespace RopeDetection.WebService
 {
     public class ClientHelper
     {
-        public const string URL = "https://localhost:44379/api/";
+        public const string URL = "http://localhost:5000/api/";
 
         public static HttpClient GetClient()
         {

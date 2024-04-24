@@ -1,6 +1,7 @@
 ﻿using RopeDetection.WPF.StaticClass;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -54,15 +55,63 @@ namespace RopeDetection.WPF.CreationTeachingModel
             else if (mLModelCreationSteps.StepName == "2")
             {
                 mLModelCreationSteps.StepName = "3";
-                mLModelCreationSteps.StepDescription = "Провести обучение";
-                ModelCreationFrame.NavigationService.Navigate(new StartTeachingPage());
+                if (StaticModel.ModelType == CommonData.ModelEnums.ModelType.ObjectDetection)
+                {
+                    mLModelCreationSteps.StepDescription = "Провести разметку изображений";
+                    ModelCreationFrame.NavigationService.Navigate(new StartLabelingPage());
+                } 
+                else
+                {
+
+                    mLModelCreationSteps.StepDescription = "Провести обучение";
+                    ModelCreationFrame.NavigationService.Navigate(new StartTeachingPage());
+                }
             }
             else if (mLModelCreationSteps.StepName == "3")
             {
                 mLModelCreationSteps.StepName = "4";
+                if (StaticModel.ModelType == CommonData.ModelEnums.ModelType.ObjectDetection)
+                {
+                    var path = "C:\\Users\\Daria\\source\\repos\\RopeDetectionNetwork\\scripts\\save_label.m";
+                    var pi = new ProcessStartInfo(path)
+                    {
+                        Arguments = System.IO.Path.GetFileName(path),
+                        UseShellExecute = true,
+                        WorkingDirectory = System.IO.Path.GetDirectoryName(path),
+                        FileName = "C:\\Program Files\\MATLAB\\R2018b\\bin\\matlab.exe",
+                        Verb = "OPEN"
+                    };
+                    Process.Start(pi);
+                    mLModelCreationSteps.StepDescription = "Провести обучение";
+                    ModelCreationFrame.NavigationService.Navigate(new StartTeachingPage());
+                } 
+                else
+                {
+                    mLModelCreationSteps.StepDescription = "Результат обучения";
+                    mLModelCreationSteps.ButtonText = "Готово";
+                    ModelCreationFrame.NavigationService.Navigate(new ShowTeachingResultPage());
+                }             
+            }
+            else if (mLModelCreationSteps.StepName == "4")
+            {
+                mLModelCreationSteps.StepName = "5";
+                if (StaticModel.ModelType == CommonData.ModelEnums.ModelType.ObjectDetection)
+                {
+                    var path = "C:\\Users\\Daria\\source\\repos\\RopeDetectionNetwork\\scripts\\train_model.m";
+                    var pi = new ProcessStartInfo(path)
+                    {
+                        Arguments = System.IO.Path.GetFileName(path),
+                        UseShellExecute = true,
+                        WorkingDirectory = System.IO.Path.GetDirectoryName(path),
+                        FileName = "C:\\Program Files\\MATLAB\\R2018b\\bin\\matlab.exe",
+                        Verb = "OPEN"
+                    };
+                    Process.Start(pi);
+                }
+
                 mLModelCreationSteps.StepDescription = "Результат обучения";
                 mLModelCreationSteps.ButtonText = "Готово";
-                ModelCreationFrame.NavigationService.Navigate(new ShowTeachingResultPage());               
+                ModelCreationFrame.NavigationService.Navigate(new ShowTeachingResultPage());
             }
         }
     }

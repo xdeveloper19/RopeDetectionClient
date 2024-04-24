@@ -9,7 +9,7 @@
       Title="StartTeachingPage">
 
     <Grid>
-        <TextBlock Text="Вы уже выбрали тип обучения и загрузили все необходимые изобржения, соответствующие определённому типу дефектов. Для начала обучения нажмите далее." HorizontalAlignment="Center"  
+        <TextBlock Text="Вы уже выбрали тип обучения и загрузили все необходимые изображения, соответствующие определённому типу дефектов. Для начала обучения нажмите далее." HorizontalAlignment="Center"  
                VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="25" Margin="10"
                Foreground="#767575" FontStyle="Normal" TextWrapping="Wrap"/>
     </Grid>

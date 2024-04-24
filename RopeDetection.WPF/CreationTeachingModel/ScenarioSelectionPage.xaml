@@ -40,9 +40,10 @@
             ItemsSource="{Binding LabelModel}"
             Foreground="#767575"
             Height="30" 
+            SelectionChanged="ComboBox_SelectionChanged"
             VerticalAlignment="Center">
             <ComboBoxItem>Классификация</ComboBoxItem>
-            <ComboBoxItem>Регрессия</ComboBoxItem>
+            <ComboBoxItem>Распознавание объектов</ComboBoxItem>
         </ComboBox>
 
         <Button 

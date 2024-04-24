@@ -135,7 +135,7 @@ namespace RopeDetection.WPF.CreatingTrainingModel
                 {
                     ModelService.InitializeClient(client);
                     //fix it
-                    var modelType = (typeName == "Классификация") ? ModelType.Classification : ModelType.Regression;
+                    var modelType = (typeName == "Классификация") ? ModelType.Classification : (typeName == "Распознавание объектов")? ModelType.ObjectDetection : ModelType.Regression;
                     var o_data = await ModelService.CreateModel(nameModel, modelType);
 
                     if (o_data.Result.ToString() == "OK")

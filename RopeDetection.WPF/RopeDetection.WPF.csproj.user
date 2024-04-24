@@ -19,6 +19,9 @@
     <Compile Update="CreationTeachingModel\ShowTeachingResultPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CreationTeachingModel\StartLabelingPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CreationTeachingModel\StartTeachingPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CreationTeachingModel\ShowTeachingResultPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreationTeachingModel\StartLabelingPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CreationTeachingModel\StartTeachingPage.xaml">
